@@ -1,0 +1,96 @@
+.style-guide-body {
+    background: var(--color-background-main);
+    color: var(--color-text-on-dark-primary);
+    padding: var(--spacing-large) 0;
+}
+
+.style-guide-body h1 {
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-small);
+}
+
+.sg-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--color-text-on-dark-secondary);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-large) auto;
+}
+
+.sg-section {
+    background-color: var(--color-background-card);
+    padding: var(--spacing-large);
+    margin-bottom: var(--spacing-large);
+    border-radius: 8px;
+    border: 1px solid var(--color-border-dark);
+}
+
+.sg-section h2 {
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-border-dark);
+    padding-bottom: var(--spacing-medium);
+    margin-bottom: var(--spacing-large);
+}
+
+.sg-color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-medium);
+}
+
+.sg-color-swatch {
+    border: 1px solid var(--color-border-dark);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.sg-color-box {
+    height: 100px;
+}
+
+.sg-color-info {
+    padding: var(--spacing-small);
+    background-color: var(--color-background-highlight);
+    font-size: 0.9rem;
+}
+
+.sg-color-info span {
+    display: block;
+    line-height: 1.4;
+}
+
+.sg-color-info .hex-code {
+    font-weight: bold;
+    color: var(--color-text-on-dark-headings);
+}
+
+.sg-typography-examples hr {
+    border: none;
+    height: 1px;
+    background-color: var(--color-border-dark);
+    margin-bottom: var(--spacing-large);
+}
+
+.sg-typography-examples h1,
+.sg-typography-examples h2,
+.sg-typography-examples h3,
+.sg-typography-examples h4,
+.sg-typography-examples h5,
+.sg-typography-examples p {
+    margin-bottom: var(--spacing-medium);
+}
+
+.sg-button-examples div {
+    margin-bottom: var(--spacing-medium);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-medium);
+    flex-wrap: wrap;
+}
+
+.sg-button-examples span {
+    font-size: 0.9rem;
+    color: var(--color-text-on-dark-secondary);
+}

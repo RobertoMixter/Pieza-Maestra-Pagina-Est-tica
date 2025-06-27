@@ -1,0 +1,275 @@
+.nosotros-page .hero-small.has-bg-image {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/about-hero-bg.jpg');
+    background-color: transparent;
+}
+
+.about-intro,
+.mission-vision,
+.why-choose-us,
+.team {
+    background-color: transparent;
+}
+
+.about-content-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-large);
+    background-color: var(--color-background-card);
+    padding: var(--spacing-large);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+}
+
+.about-text {
+    flex: 1 1 55%;
+    min-width: 300px;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-medium);
+    color: var(--color-primary);
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-medium);
+    color: var(--color-text-on-dark-primary);
+}
+
+.about-image {
+    flex: 1 1 40%;
+    min-width: 300px;
+}
+
+.about-image .image-placeholder,
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    min-height: 300px;
+    object-fit: cover;
+    background-color: var(--color-background-highlight);
+}
+
+.mission-vision .container > div {
+    background-color: var(--color-background-card);
+    padding: var(--spacing-large);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+}
+
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-large);
+}
+
+.mission-item h4,
+.vision-item h4 {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-small);
+}
+
+.mission-item p,
+.vision-item p {
+    color: var(--color-text-on-dark-primary);
+}
+
+.mission-vision-grid h4 svg {
+    vertical-align: middle;
+    margin-right: 8px;
+    color: var(--color-primary);
+}
+
+.mission-vision-grid h4 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.mission-vision-grid h4:hover,
+.mission-vision-grid h4:focus {
+    transform: scale(1.1);
+    color: var(--color-accent-yellow-electric);
+}
+
+.mission-vision-grid h4.clicked {
+    transform: scale(1.1);
+    color: var(--color-accent-yellow-electric);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-medium);
+}
+
+.feature-item {
+    background-color: var(--color-background-card);
+    padding: var(--spacing-medium);
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--color-border-dark);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-item .feature-icon-placeholder {
+    background-color: var(--color-primary);
+    color: var(--color-text-on-accent);
+    margin-bottom: var(--spacing-medium);
+}
+.feature-item h5 {
+    color: var(--color-text-on-dark-headings);
+    margin-bottom: var(--spacing-small);
+}
+.feature-item p {
+    font-size: 0.9rem;
+    color: var(--color-text-on-dark-secondary);
+}
+
+.feature-item:hover,
+.feature-item:focus {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.feature-item svg {
+    stroke: var(--color-white);
+    transition: stroke 0.3s ease, transform 0.3s ease;
+}
+
+body.light-mode .feature-item svg {
+    stroke: var(--color-black); 
+}
+
+.feature-item:hover svg,
+.feature-item:focus svg {
+    stroke: var(--color-accent-yellow-electric);
+    transform: scale(1.2);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-large);
+}
+
+.team-member-card {
+    background-color: var(--color-background-highlight);
+    padding: var(--spacing-medium);
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--color-border-dark);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.team-member-card img.team-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto var(--spacing-medium) auto;
+    object-fit: cover;
+    border: 2px solid var(--color-primary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member-card:hover img.team-photo {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.team-member-card h4 {
+    color: var(--color-text-on-dark-headings);
+    margin-bottom: var(--spacing-small);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.team-member-card:hover h4 {
+    color: var(--color-accent-yellow-electric);
+    transform: scale(1.05);
+}
+
+.team-member-card .member-role {
+    font-size: 0.9rem;
+    color: var(--color-accent-yellow-electric);
+    transition: color 0.3s ease;
+}
+
+.team-member-card:hover .member-role {
+    color: var(--color-primary);
+}
+
+.team-member-card .member-role::before {
+    content: "👨‍💻";
+    margin-right: 6px;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.cta-contact {
+    margin-top: var(--spacing-medium);
+    margin-bottom: var(--spacing-medium);
+    text-align: center;
+    padding-top: 5px;
+}
+
+.cta-contact .btn {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--color-primary);
+    color: var(--color-text-on-accent);
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-contact .btn:hover {
+    background-color: var(--color-accent-yellow-electric);
+    color: var(--color-black);
+    transform: translateY(-3px);
+}
+
+.cta-contact .btn svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-right: 8px;
+}
+
+.about-text h3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-primary);
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.about-text h3:hover,
+.about-text h3:focus {
+    transform: scale(1.1);
+    color: var(--color-accent-yellow-electric);
+}
+
+.about-text h3.clicked {
+    transform: scale(1.1);
+    color: var(--color-accent-yellow-electric);
+}

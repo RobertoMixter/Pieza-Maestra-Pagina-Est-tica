@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tienda de Productos Informáticos - Pieza Maestra | Managua</title>
+    <meta name="description" content="Catálogo de productos informáticos en Pieza Maestra. Encuentra laptops, PCs, componentes y accesorios de las mejores marcas. Asesoría de compra y garantía.">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/productos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link" title="Ir a la página de inicio">
+                    <img src="images/logo-pieza-maestra.png" alt="Icono de Pieza Maestra" class="logo-icon">
+                    <div class="logo-text">
+                        <span class="logo-title">Pieza Maestra</span>
+                        <span class="logo-slogan">Soluciones Informáticas a tu Medida</span>
+                    </div>
+                </a>
+            </div>
+            <nav class="main-navigation" id="main-navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                            <span class="nav-text">Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="servicios.html">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                            <span class="nav-text">Servicios</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="productos.html" class="active">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+                            <span class="nav-text">Productos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            <span class="nav-text">Nosotros</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span class="nav-text">Contacto</span>
+                        </a>
+                    </li>
+                    <li class="theme-toggle-item">
+                        <button id="themeToggle" class="theme-toggle-btn" aria-label="Cambiar tema">
+                            <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+                            </svg>
+                            <svg class="icon icon-sun visually-hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="5"/>
+                                <path d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.24-7.24l-1.42 1.42M6.34 17.66l-1.42 1.42m0-13.84l1.42 1.42M17.66 17.66l1.42 1.42"/>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <button class="mobile-nav-toggle" aria-label="Abrir menú de navegación">
+                <span class="hamburger-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title-section has-bg-image" style="background-image: url('images/hero-NOMBRE.jpg');" data-aos="fade-down">
+            <div class="container">
+                <h2>Nuestros Productos</h2>
+                <p>Explora nuestra selección de productos tecnológicos de calidad.</p>
+            </div>
+        </section>
+
+        <section class="products-listing section-padding">
+            <div class="container">
+                <button id="toggleFilters" class="btn btn-secondary">Mostrar Filtros</button>
+                <aside class="filters-sidebar" id="filtersSidebar">
+                    <button id="closeFilters" class="btn btn-tertiary">Cerrar</button>
+                    <h3>Filtrar Por</h3>
+                    <div class="filter-group">
+                        <h4>Categoría</h4>
+                        <ul>
+                            <li><label><input type="checkbox" name="category" value="desktops"> Computadoras de Escritorio</label></li>
+                            <li><label><input type="checkbox" name="category" value="motherboards"> Placas Base</label></li>
+                            <li><label><input type="checkbox" name="category" value="graphics-cards"> Tarjetas Gráficas</label></li>
+                            <li><label><input type="checkbox" name="category" value="ram"> Memorias RAM</label></li>
+                            <li><label><input type="checkbox" name="category" value="laptops"> Portátiles</label></li>
+                            <li><label><input type="checkbox" name="category" value="accesorios"> Accesorios</label></li>
+                        </ul>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Marca</h4>
+                        <ul>
+                            <li><label><input type="checkbox" name="brand" value="hp"> HP</label></li>
+                            <li><label><input type="checkbox" name="brand" value="dell"> Dell</label></li>
+                            <li><label><input type="checkbox" name="brand" value="lenovo"> Lenovo</label></li>
+                            <li><label><input type="checkbox" name="brand" value="asus"> Asus</label></li>
+                            <li><label><input type="checkbox" name="brand" value="logitech"> Logitech</label></li>
+                        </ul>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Rango de Precio</h4>
+                        <label for="min-price">Mín:</label>
+                        <input type="number" id="min-price" name="min-price" placeholder="$0" step="10">
+                        <label for="max-price">Máx:</label>
+                        <input type="number" id="max-price" name="max-price" placeholder="$1000" step="10">
+                    </div>
+                    <button type="button" class="btn btn-primary">Aplicar Filtros</button>
+                </aside>
+
+                <div class="products-slider-content">
+
+                    <!-- PC -->
+                    <h3 class="section-title" data-aos="fade-up">PC de Escritorio</h3>
+                    <div class="swiper products-swiper-pc">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide product-item-card" data-name="PC Gamer Ryzen" data-price="1500" data-description="AMD Ryzen 7, 32GB RAM, RTX 4070, SSD 1TB.">
+                                <div class="product-card-inner">
+                                    <img src="images-productos/pc-ryzen.png" alt="PC Gamer Ryzen">
+                                    <div class="product-card-info">
+                                        <h4>PC Gamer Ryzen</h4>
+                                        <p class="product-price">$1,500</p>
+                                        <p class="product-description">AMD Ryzen 7, 32GB RAM, RTX 4070, SSD 1TB.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-item-card" data-name="PC Intel i7" data-price="1300" data-description="Intel i7 12700, 16GB RAM, RTX 3060, SSD 512GB.">
+                                <div class="product-card-inner">
+                                    <img src="images-productos/pc-intel.png" alt="PC Intel i7">
+                                    <div class="product-card-info">
+                                        <h4>PC Intel i7</h4>
+                                        <p class="product-price">$1,300</p>
+                                        <p class="product-description">Intel i7 12700, 16GB RAM, RTX 3060, SSD 512GB.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-item-card" data-name="PC Oficina" data-price="700" data-description="Intel i5, 8GB RAM, SSD 256GB.">
+                                <div class="product-card-inner">
+                                    <img src="images-productos/pc-oficina.png" alt="PC Oficina">
+                                    <div class="product-card-info">
+                                        <h4>PC Oficina</h4>
+                                        <p class="product-price">$700</p>
+                                        <p class="product-description">Intel i5, 8GB RAM, SSD 256GB.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-item-card" data-name="PC Básica" data-price="400" data-description="Intel i3, 4GB RAM, 500GB HDD.">
+                                <div class="product-card-inner">
+                                    <img src="images-productos/pc-basica.png" alt="PC Básica">
+                                    <div class="product-card-info">
+                                        <h4>PC Básica</h4>
+                                        <p class="product-price">$400</p>
+                                        <p class="product-description">Intel i3, 4GB RAM, 500GB HDD.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <!-- Laptops -->
+                    <h3 class="section-title" data-aos="fade-up">Laptops</h3>
+                    <div class="swiper products-swiper-laptops">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide product-item-card" data-name="ASUS ROG Strix G18" data-price="1200" data-description="Intel i7, 16GB RAM, RTX 4060, 1TB SSD.">
+                                <div class="product-card-inner">
+                                    <img src="images-productos/laptop-asus.png" alt="ASUS ROG Strix">
+                                    <div class="product-card-info">
+                                        <h4>ASUS ROG Strix G18</h4>
+                                        <p class="product-price">$1,200</p>
+                                        <p class="product-description">Intel i7, 16GB RAM, RTX 4060, 1TB SSD.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-item-card" data-name="Dell Alienware" data-price="2200" data-description="Intel i9, 32GB RAM, RTX 4080, 2TB SSD.">
+                                <div class="product-card-inner">
+                                    <img src="images-productos/laptop-dell.png" alt="Dell Alienware">
+                                    <div class="product-card-info">
+                                        <h4>Dell Alienware M18</h4>
+                                        <p class="product-price">$2,200</p>
+                                        <p class="product-description">Intel i9, 32GB RAM, RTX 4080, 2TB SSD.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-item-card" data-name="MSI Raider" data-price="1800" data-description="Ryzen 9, 32GB RAM, RTX 4070, 1TB SSD.">
+                                <div class="product-card-inner">
+                                    <img src="images-productos/laptop-msi.png" alt="MSI Raider">
+                                    <div class="product-card-info">
+                                        <h4>MSI Raider</h4>
+                                        <p class="product-price">$1,800</p>
+                                        <p class="product-description">Ryzen 9, 32GB RAM, RTX 4070, 1TB SSD.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-item-card" data-name="HP Omen" data-price="1600" data-description="Intel i7, 16GB RAM, RTX 4060, 1TB SSD.">
+                                <div class="product-card-inner">
+                                    <img src="images-productos/laptop-hp.png" alt="HP Omen">
+                                    <div class="product-card-info">
+                                        <h4>HP Omen 17</h4>
+                                        <p class="product-price">$1,600</p>
+                                        <p class="product-description">Intel i7, 16GB RAM, RTX 4060, 1TB SSD.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <!-- Accesorios -->
+                    <h3 class="section-title" data-aos="fade-up">Accesorios</h3>
+                    <div class="swiper products-swiper-accessories">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide product-item-card" data-name="Teclado Redragon" data-price="60" data-description="Teclado mecánico, switches rojos.">
+                                <div class="product-card-inner">
+                                    <img src="images-productos/teclado-redragon.png" alt="Teclado Redragon">
+                                    <div class="product-card-info">
+                                        <h4>Teclado Redragon</h4>
+                                        <p class="product-price">$60</p>
+                                        <p class="product-description">Teclado mecánico, switches rojos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-item-card" data-name="Mouse Logitech" data-price="70" data-description="Sensor HERO 25K, RGB.">
+                                <div class="product-card-inner">
+                                    <img src="images-productos/mouse-logitech.png" alt="Mouse Logitech">
+                                    <div class="product-card-info">
+                                        <h4>Mouse Logitech G502</h4>
+                                        <p class="product-price">$70</p>
+                                        <p class="product-description">Sensor HERO 25K, RGB.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-item-card" data-name="Audífonos HyperX" data-price="90" data-description="7.1 Surround, micrófono desmontable.">
+                                <div class="product-card-inner">
+                                    <img src="images-productos/audifonos-hyperx.png" alt="Audífonos HyperX">
+                                    <div class="product-card-info">
+                                        <h4>Audífonos HyperX</h4>
+                                        <p class="product-price">$90</p>
+                                        <p class="product-description">7.1 Surround, micrófono desmontable.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-item-card" data-name="Silla Gamer" data-price="150" data-description="Ergonómica, reclinable, soporte lumbar.">
+                                <div class="product-card-inner">
+                                    <img src="images-productos/silla-gamer.png" alt="Silla Gamer">
+                                    <div class="product-card-info">
+                                        <h4>Silla Gamer</h4>
+                                        <p class="product-price">$150</p>
+                                        <p class="product-description">Ergonómica, reclinable, soporte lumbar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <!-- Licencias de Software -->
+                    <h3 class="section-title" data-aos="fade-up">Licencias de Software</h3>
+                    <div class="swiper products-swiper-software">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide product-item-card" data-name="Licencia Windows 11 Pro" data-price="150" data-description="Licencia original Windows 11 Pro 64bit, activación online.">
+                            <div class="product-card-inner">
+                                <img src="images-productos/windows11.png" alt="Licencia Windows 11 Pro">
+                                <div class="product-card-info">
+                                    <h4>Windows 11 Pro</h4>
+                                    <p class="product-price">$150</p>
+                                    <p class="product-description">Licencia original Windows 11 Pro 64bit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item-card" data-name="Microsoft Office 365" data-price="80" data-description="Word, Excel, PowerPoint, licencia anual.">
+                            <div class="product-card-inner">
+                            <img src="images-productos/office365.png" alt="Office 365">
+                                <div class="product-card-info">
+                                    <h4>Office 365</h4>
+                                    <p class="product-price">$80</p>
+                                    <p class="product-description">Paquete anual Office 365, Word, Excel, PowerPoint.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item-card" data-name="Antivirus ESET" data-price="30" data-description="Protección completa 1 año.">
+                            <div class="product-card-inner">
+                            <img src="images-productos/eset.png" alt="Antivirus ESET">
+                                <div class="product-card-info">
+                                    <h4>Antivirus ESET</h4>
+                                    <p class="product-price">$30</p>
+                                    <p class="product-description">Protección completa multiplataforma 1 año.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item-card" data-name="Adobe Photoshop" data-price="240" data-description="Licencia anual Adobe Photoshop para edición.">
+                            <div class="product-card-inner">
+                            <img src="images-productos/photoshop.png" alt="Adobe Photoshop">
+                                <div class="product-card-info">
+                                    <h4>Adobe Photoshop</h4>
+                                    <p class="product-price">$240</p>
+                                    <p class="product-description">Licencia anual para edición profesional.</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column footer-about">
+                    <a href="index.html" class="logo-link">
+                        <img src="images/logo-pieza-maestra.png" alt="Icono Pieza Maestra" class="logo-icon" />
+                        <div class="logo-text">
+                            <span class="logo-title">Pieza Maestra</span>
+                            <span class="logo-slogan">Soluciones Informáticas</span>
+                        </div>
+                    </a>
+                    <p>Tu centro de confianza para reparación, componentes y asesoría tecnológica en Managua.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>Jinotega, Sexta calle norte del hotel primavera 1 cuadra y media al oeste</li>
+                        <li>Tel: <a href="tel:+50522551234">+505 2255 1234</a></li>
+                        <li>Email: <a href="mailto:info@piezamaestra.com">info@piezamaestra.com</a></li>
+                        <li>Lun - Vie: 9am - 6pm | Sáb: 9am - 1pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Pieza Maestra. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/script.js" defer></script>
+
+</body>
+</html>
